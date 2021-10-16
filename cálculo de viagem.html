@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de cálculo de viagem</title>
+    <link rel="shortcut icon" href="_image/avião.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="_css/estiloc.css">
+
+
+
+</head>
+         
+
+<body>
+
+    <img src="_imagens/Agência de viagens1.jpg" width="1350px"  alt="...">
+
+    <header class="page-header">
+
+            <div class="logo">
+                <h1>Calcule Aqui<span class="white">Sua Viagens</span></h1>
+            </div>
+
+            <nav class="page-menu">
+
+                <a href="index.html"> Home</a>
+                <a href="pacotespromocionais.html"> Pacotes promocionais</a>
+                <a href="destino.html">Destino</a>
+                <a href="cálculo de viagem.html">Cálculo da viagem</a>
+        
+        
+            </nav>
+        
+    
+
+            <button type="button" class="btn btn-primary">Cálculo de Viagem</button>
+    
+            <br>
+        
+            
+         
+    </header>
+
+  
+
+    <script>
+        
+        var botao= document.querySelector("button");
+         botao.addEventListener("click", Calculo );
+         
+         
+         
+         function Calculo () {
+         var nome = prompt('Insira seu nome:');
+         var quantidadepassageiros = prompt('Insira a quantidade de passageiros:');
+         var valorviagem = prompt('Insira o valor da viagem:');
+         var resultado = quantidadepassageiros * valorviagem;
+         
+         var mensagem = "Orçamento <br>Nome do cliente: "+ nome + "<br>\n";
+         mensagem = mensagem + "Valor da Viagem R$ " + resultado;
+         
+         document.querySelector("div").innerHTML= mensagem;
+         
+         } 
+         
+      
+
+    </script> 
+ <footer class="page-footer">
+    <p>Todos os direitos reservados</p>
+</footer> 
+</body>
+</html>
